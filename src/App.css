@@ -41,3 +41,8 @@ p {
 .product-details-retail {
     text-decoration: line-through;
 }
+
+.product-card-mobile {
+    padding-top: 32px;
+    border-radius: 16px
+}

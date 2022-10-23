@@ -34,11 +34,12 @@ export default function ProductCardDesktop({ productDetails }) {
 
           <div className="buttons product-details-button">
             <button
+              onClick={() => productDetails.addToCard()}
               className="button is-primary"
               style={{ backgroundColor: "hsl(158, 36%, 37%)" }}
             >
-              <span class="icon" style={{ paddingRight: "1.5rem" }}>
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span className="icon" style={{ paddingRight: "1.5rem" }}>
+                <i className="fa fa-shopping-cart" aria-hidden="true"></i>
               </span>
               Add to Cart
             </button>

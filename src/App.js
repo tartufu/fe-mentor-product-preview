@@ -4,6 +4,7 @@ import "bulma/css/bulma.css";
 import { useMediaQuery } from "react-responsive";
 
 import ProductCardDesktop from "./ProductPreviewDesktopComponents/ProductCardDesktop";
+import ProductCardMobile from "./ProductPreviewMobileComponents/ProductCardMobile";
 
 const App = () => {
   const isDesktopOrLaptop = useMediaQuery({
@@ -18,6 +19,9 @@ const App = () => {
       "A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the house of CHANEL.",
     retailPrice: 169.99,
     discount: 20,
+    addToCard() {
+      alert("PING ");
+    },
   };
 
   return (
@@ -30,7 +34,9 @@ const App = () => {
           {isDesktopOrLaptop && (
             <ProductCardDesktop productDetails={productDetails} />
           )}
-          {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
+          {isTabletOrMobile && (
+            <ProductCardMobile productDetails={productDetails} />
+          )}
         </div>
       </div>
     </div>
