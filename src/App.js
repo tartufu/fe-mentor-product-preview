@@ -21,14 +21,11 @@ const App = () => {
   };
 
   return (
-    <div>
-      <div className="container is-fluid" style={{ border: "1px solid red" }}>
+    <div style={{ backgroundColor: "hsl(30, 38%, 92%)", height: "100vh" }}>
+      <div className="container is-fluid">
         <div
           className="columns is-vcentered is-centered"
-          style={{
-            border: "1px solid red",
-            height: "100vh",
-          }}
+          style={{ height: "100vh" }}
         >
           {isDesktopOrLaptop && (
             <ProductCardDesktop productDetails={productDetails} />
