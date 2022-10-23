@@ -20,7 +20,7 @@ const App = () => {
     retailPrice: 169.99,
     discount: 20,
     addToCard() {
-      alert("PING ");
+      alert("PING");
     },
   };
 
